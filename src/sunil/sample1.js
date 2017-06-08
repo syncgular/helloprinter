@@ -114,6 +114,7 @@ var dd = {
     }
 };
 
+
 var pdfDoc = printer.createPdfKitDocument(dd);
 pdfDoc.pipe(fs.createWriteStream('basics.pdf')).on('finish', function() {
     //success failure
