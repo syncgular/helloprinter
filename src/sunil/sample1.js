@@ -13,22 +13,22 @@ var printer = new PdfPrinter(fonts);
 
 var dd = {
 
-    pageSize: { width: 1050, height: 500 },
+    pageSize: { width: 700, height: 500 },
     content: [
         {
             columns: [
                 {
-                    width: 350,
+                    width: 250,
                     text: 'PAY WITH FREEPAY...EARN CASHBACK!!',
                     style: 'subheader'
                 },
                 {
-                    width: 180,
+                    width: 150,
                     text: 'TAX INVOICE ',
                     style: 'subheader',
                 },
                 {
-                    width: 300,
+                    width: 175,
                     text: 'FREEPAY MORE...EARN MORE!! ',
                     style: 'subheader'
                 },
@@ -43,22 +43,22 @@ var dd = {
         {
             style: 'tableExample1',
             table: {
-                widths: [ 380, '*', 220],
+                widths: [ 250, '*', 150],
                 body: [
                     [
                         {text: [
-                            { text: 'Unnati Trading Company  \n', italics: true, fontSize: 30,bold: true },
-                            { text: 'Distributor for FMCG Product \n', fontSize: 20, bold: true },
-                            { text: 'Shop No. 45, Gurunanak Nagar, Nath Pai Marg,  \n', fontSize: 17 },
-                            { text: 'Mob.:  8828299466/7675008645' , fontSize: 17,bold: true },
+                            { text: 'Unnati Trading Company  \n', italics: true, fontSize: 18,bold: true },
+                            { text: 'Distributor for FMCG Product \n', fontSize: 12, bold: true },
+                            { text: 'Shop No. 45, Gurunanak Nagar, Nath Pai Marg,  \n', fontSize: 10 },
+                            { text: 'Mob.:  8828299466/7675008645' , fontSize: 10,bold: true },
                         ]},
                         {text: 'nothing interesting here', italics: true},
                         {text: [
-                            { text: 'BILL NO :   123456\n', fontSize: 20 },
-                            { text: 'DATE :        3456786 \n', fontSize: 20 },
-                            { text: 'S. MAN :    Sunil Kumar \n', fontSize: 20},
-                            { text: 'ROUTE :     Panvel \n', fontSize: 20},
-                            { text: 'P.O.NO :     401201\n', fontSize: 20},
+                            { text: 'BILL NO :   123456\n', fontSize: 12 },
+                            { text: 'DATE :        3456786 \n', fontSize: 12 },
+                            { text: 'S. MAN :    Sunil Kumar \n', fontSize: 12},
+                            { text: 'ROUTE :     Panvel \n', fontSize: 12},
+                            { text: 'P.O.NO :     401201\n', fontSize: 12},
                         ]}
                     ]
                 ]
@@ -67,7 +67,7 @@ var dd = {
         {
             style: 'tableExample2',
             table: {
-                widths: [ '*', 60,100,50,100,100,100, 100],
+                widths: [ '*', 50,50,50,50,50,50, 50],
                 height: [150],
                 headerRows: 1,
                 body: [
@@ -138,7 +138,7 @@ var dd = {
         {
             style: 'tableExample2',
             table: {
-                widths: [ '*', 60,100,50,100,100,100, 100],
+                widths: [ '*', 50,50,50,50,50,50, 50],
                 height: [150],
                 headerRows: 1,
                 body: [
@@ -175,7 +175,7 @@ var dd = {
             bold: true
         },
         subheader: {
-            fontSize: 15,
+            fontSize: 10,
             bold: true
         },
         bigger: {
@@ -183,12 +183,13 @@ var dd = {
             italics: true,
         },
         tableExample1: {
-            margin: [0, 5, 0, 0]
+            margin: [0, 5, 0, 0],
+            alignment: 'center',
         },
         tableExample2: {
             margin: [0, 0, 0, 0],
             alignment: 'center',
-            fontSize: 17,
+            fontSize: 10,
 
 
         }
