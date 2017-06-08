@@ -13,7 +13,7 @@ var printer = new PdfPrinter(fonts);
 
 var dd = {
 
-    pageSize: { width: 550, height: 500 },
+    pageSize: { width: 550, height: 300 },
     content: [
         {
             columns: [
@@ -43,22 +43,22 @@ var dd = {
         {
             style: 'tableExample1',
             table: {
-                widths: [ 250, '*', 150],
+                widths: [ 200, '*', 100],
                 body: [
                     [
                         {text: [
-                            { text: 'Unnati Trading Company  \n', italics: true, fontSize: 18,bold: true },
-                            { text: 'Distributor for FMCG Product \n', fontSize: 12, bold: true },
-                            { text: 'Shop No. 45, Gurunanak Nagar, Nath Pai Marg,  \n', fontSize: 10 },
-                            { text: 'Mob.:  8828299466/7675008645' , fontSize: 10,bold: true },
+                            { text: 'Unnati Trading Company  \n', italics: true, fontSize: 12,bold: true },
+                            { text: 'Distributor for FMCG Product \n', fontSize: 10, bold: true },
+                            { text: 'Shop No. 45, Gurunanak Nagar, Nath Pai Marg,  \n', fontSize: 8 },
+                            { text: 'Mob.:  8828299466/7675008645' , fontSize: 8,bold: true },
                         ]},
                         {text: 'nothing interesting here', italics: true},
                         {text: [
-                            { text: 'BILL NO :   123456\n', fontSize: 12 },
-                            { text: 'DATE :        3456786 \n', fontSize: 12 },
-                            { text: 'S. MAN :    Sunil Kumar \n', fontSize: 12},
-                            { text: 'ROUTE :     Panvel \n', fontSize: 12},
-                            { text: 'P.O.NO :     401201\n', fontSize: 12},
+                            { text: 'BILL NO :   123456\n', fontSize: 8 },
+                            { text: 'DATE :        3456786 \n', fontSize: 8 },
+                            { text: 'S. MAN :    Sunil Kumar \n', fontSize: 8},
+                            { text: 'ROUTE :     Panvel \n', fontSize: 8},
+                            { text: 'P.O.NO :     401201\n', fontSize: 8},
                         ]}
                     ]
                 ]
@@ -67,9 +67,7 @@ var dd = {
         {
             style: 'tableExample2',
             table: {
-                widths: [ '*', 50,50,50,50,50,50, 50],
-                height: [150],
-                headerRows: 1,
+                widths: [ 100, '*','*','*','*','*','*', '*'],
                 body: [
                     [
                         {text: 'PRODUCT NAME', bold: true,border: [true, false, false, true]},
@@ -138,7 +136,7 @@ var dd = {
         {
             style: 'tableExample3',
             table: {
-                widths: [ 150, '*','*','*','*','*','*', '*','*'],
+                widths: [ 80, '*','*','*','*','*','*', '*','*'],
                 headerRows: 1,
                 body: [
                     [
@@ -172,7 +170,7 @@ var dd = {
     ],
     styles: {
         header: {
-            fontSize: 18,
+            fontSize: 12,
             bold: true
         },
         subheader: {
@@ -180,7 +178,7 @@ var dd = {
             bold: true
         },
         bigger: {
-            fontSize: 15,
+            fontSize: 10,
             italics: true,
         },
         tableExample1: {
@@ -190,7 +188,7 @@ var dd = {
         tableExample2: {
             margin: [0, 0, 0, 0],
             alignment: 'center',
-            fontSize: 10,
+            fontSize: 8,
 
 
         },
@@ -207,8 +205,6 @@ var dd = {
         columnGap: 0,
     }
 };
-
-
 
 var pdfDoc = printer.createPdfKitDocument(dd);
 pdfDoc.pipe(fs.createWriteStream('basics.pdf')).on('finish', function() {
