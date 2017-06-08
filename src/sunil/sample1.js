@@ -65,25 +65,20 @@ var dd = {
             }
         },
         {
-            style: 'tableExample1',
+            style: 'tableExample2',
             table: {
-                widths: [ 380, '*', 220],
+                widths: [ '*', 60,100,50,100,100,100, 100],
+                height: [150],
                 body: [
                     [
-                        {text: [
-                            { text: 'Unnati Trading Company  \n', italics: true, fontSize: 30,bold: true },
-                            { text: 'Distributor for FMCG Product \n', fontSize: 20, bold: true },
-                            { text: 'Shop No. 45, Gurunanak Nagar, Nath Pai Marg,  \n', fontSize: 17 },
-                            { text: 'Mob.:  8828299466/7675008645' , fontSize: 17,bold: true },
-                        ]},
-                        {text: 'nothing interesting here', italics: true},
-                        {text: [
-                            { text: 'BILL NO :   123456\n', fontSize: 20 },
-                            { text: 'DATE :        3456786 \n', fontSize: 20 },
-                            { text: 'S. MAN :    Sunil Kumar \n', fontSize: 20},
-                            { text: 'ROUTE :     Panvel \n', fontSize: 20},
-                            { text: 'P.O.NO :     401201\n', fontSize: 20},
-                        ]}
+                        {text: 'PRODUCT NAME', BOLD: true,fontSize: 17,},
+                        {text: 'M.R.P', BOLD: true,fontSize: 17,},
+                        {text: 'CASS/PCS', BOLD: true,fontSize: 17,},
+                        {text: 'RATE', BOLD: true,fontSize: 17,},
+                        {text: 'SCHEME', BOLD: true,fontSize: 17,},
+                        {text: 'VAT %', BOLD: true,fontSize: 17,},
+                        {text: 'VAT AMT.', BOLD: true,fontSize: 17,},
+                        {text: 'NET AMT.', BOLD: true,fontSize: 17,},
                     ]
                 ]
             }
@@ -105,7 +100,10 @@ var dd = {
             italics: true,
         },
         tableExample1: {
-            margin: [0, 5, 0, 15]
+            margin: [0, 5, 0, 0]
+        },
+        tableExample2: {
+            margin: [0, 0, 0, 0],
         }
 
     },
