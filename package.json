@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "pdfmake": "^0.1.30",
     "printer": "^0.2.2"
   }
 }
