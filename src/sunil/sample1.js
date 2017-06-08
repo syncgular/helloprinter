@@ -122,6 +122,37 @@ var dd = {
                         {text: '546.25',border: [true, false, true, false]},
                     ],
                     [
+                        {text: 'Tata Tea\n\n',border: [true, false, false, true]},
+                        {text: '100',border: [true, false, false, true]},
+                        {text: '5',border: [true, false, false, true]},
+                        {text: '100',border: [true, false, false, true]},
+                        {text: '5',border: [true, false, false, true]},
+                        {text: '15',border: [true, false, false, true]},
+                        {text: '71.25',border: [true, false, false, true]},
+                        {text: '546.25',border: [true, false, true, true]},
+                    ]
+                ]
+            },
+
+        },
+        {
+            style: 'tableExample2',
+            table: {
+                widths: [ '*', 60,100,50,100,100,100, 100],
+                height: [150],
+                headerRows: 1,
+                body: [
+                    [
+                        {text: 'PRODUCT NAME', bold: true},
+                        {text: 'M.R.P', bold: true},
+                        {text: 'CASS/PCS', bold: true},
+                        {text: 'RATE', bold: true},
+                        {text: 'SCHEME', bold: true},
+                        {text: 'VAT %', bold: true,},
+                        {text: 'VAT AMT.', bold: true},
+                        {text: 'NET AMT.', bold: true},
+                    ],
+                    [
                         {text: 'Tata Tea',border: [true, false, false, true]},
                         {text: '100',border: [true, false, false, true]},
                         {text: '5',border: [true, false, false, true]},
