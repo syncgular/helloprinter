@@ -13,7 +13,7 @@ var printer = new PdfPrinter(fonts);
 
 var dd = {
 
-    pageSize: { width: 590, height: 300 },
+    pageSize: { width: 600, height: 300 },
     content: [
 
 
@@ -123,23 +123,24 @@ var dd = {
         {
             style: 'tableExample3',
             table: {
-                widths: [ 200, '*','*','*'],
+                widths: [ 180, '*','*','*'],
 
                 body: [
                     [
-                        {text: 'For Unnati Trading Co.', bold: true},
-                        {text: 'Sale Ret Amt', bold: true},
-                        {text: 'Cash Disc', bold: true},
-                        {text: 'CR Adj Amt', bold: true},
-
+                        {text: [
+                            { text: '\nVAT TIN : 27470406168V W.E.F. 01/04/2016 \n', fontSize: 8},
+                            { text: 'CST TIN : 27470406168C  W.E.F. 01/04/2016 \n', fontSize: 8},
+                            { text: 'D.L TIN : 27470406168V  W.E.F. 01/04/2016\n', fontSize: 8},
+                        ]},
+                        {text: [
+                            { text: '\nVAT TIN : 27470406168V W.E.F. 01/04/2016 \n', fontSize: 8},
+                            { text: 'CST TIN : 27470406168C  W.E.F. 01/04/2016 \n', fontSize: 8},
+                            { text: 'D.L TIN : 27470406168V  W.E.F. 01/04/2016\n', fontSize: 8},
+                        ]},
+                        {text: 'Cash Disc :', bold: true},
+                        {text: 'DistDisc :', bold: true},
                     ],
-                    [
-                        {text: 'Tata Tea',border: [true, false, false, true]},
-                        {text: '100',border: [true, false, false, true]},
-                        {text: '5',border: [true, false, false, true]},
-                        {text: '100',border: [true, false, true, true]},
 
-                    ]
                 ]
             },
 
@@ -173,7 +174,6 @@ var dd = {
         },
         tableExample3: {
             margin: [0, 0, 0, 0],
-            alignment: 'center',
             fontSize: 8,
 
 
