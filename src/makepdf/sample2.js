@@ -12,6 +12,10 @@ var fonts = {
 var printer = new PdfPrinter(fonts);
 
 
+var item = "A breif informaton about product details.";
+var itemList = [item, item, item, item, item, item, item, item, item];
+
+
 var dd = {
     header: {
         margin: 10,
@@ -30,24 +34,9 @@ var dd = {
         ]
     },
 
-    pageSize: { width: 500, height: 150 },
+    pageSize: { width: 400, height: 150 },
 
-    content: [{
-            text: 'Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World\n' +
-                'Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World' +
-                "Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World",
-            margin: [0, 0],
-        }, {
-            text: "JAI"
-        },
-        {
-            text: "SHREE"
-        },
-        {
-            text: "RAM"
-        }
-
-    ]
+    content: itemList
 }
 
 var pdfDoc = printer.createPdfKitDocument(dd);
