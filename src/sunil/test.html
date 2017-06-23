@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Remote test</title>
+</head>
+<body>
+
+<h1>Hello World!!</h1>
+<script type="text/javascript">
+    var electron = require('electron');
+    var PDFWindow = require('../');
+    var { BrowserWindow } = electron.remote;
+    const win = new BrowserWindow({
+        width: 800,
+        height: 600
+    });
+    PDFWindow.addSupport(win);
+    win.loadURL('file://src/sunil/abcd.pdf')
+</script>
+</body>
+</html>

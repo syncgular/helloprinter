@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "electron-pdf-window": "^1.0.11",
     "pdfmake": "^0.1.30",
     "printer": "^0.2.2"
   }
